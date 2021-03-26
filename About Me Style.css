@@ -1,0 +1,124 @@
+.menu-bar
+{
+    background-color:#38ADB5;
+    text-align: center;   
+}
+.menu-bar ul 
+{
+    display: flex;
+    justify-content: center; 
+    list-style: none;
+    color:white;
+}
+.menu-bar ul li 
+{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu-bar ul li a
+{
+    text-decoration:none;
+    color:white;
+}
+.active, .menu-bar ul li:hover
+{
+    background: #3BBFBF; 
+    border-radius: 3px;
+}
+.menu-bar .fa
+{
+   margin-right: 8px; 
+}
+.sub-menu-1
+{
+    display:none; 
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background: #3BBFBF;
+    margin-top: 15px;
+    margin-left: -15px ;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    background:transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+    color:#32A69A;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%);
+    text-align: center;
+    color:white
+}
+.content h1
+{
+    font: size 50px; 
+    margin-top: 60px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 20px;
+    font-size: 20px;
+    text-align: justify;
+    
+}
+button{
+    width:200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color:white;
+    cursor: pointer;
+    position:relative;
+    overflow:hidden;
+}
+span{
+    background:#009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+body
+{
+background-image: url("./Assets/dscf6098_featured-photo.jpg");
+background-size: cover;
+background-position:center;
+font-family:'Poppins', sans-serif;
